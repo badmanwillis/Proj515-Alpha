@@ -11,7 +11,7 @@ You will need:
 * [rplidar A1](http://wiki.ros.org/rplidar)
 * [AS5600](https://ams.com/as5600) magnetic encoders
 
-### Installing alpha_urdf
+### Installing alpha_urdf package
 
 Copy the alpha_urdf package into your_workspace/src directory. Then rebuild the workspace.
 
@@ -25,6 +25,7 @@ You will also need the rplidar package in the your_workspace/src directory
 
 https://github.com/Slamtec/rplidar_ros
 
+This will require you to rebuild the workspace.
 
 ## Deployment
 
