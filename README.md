@@ -8,8 +8,8 @@ You will need:
 
 * Ubuntu 16.04
 * ros kinetic
-* rplidar A1
-* (AS5600)[https://ams.com/as5600]
+* [rplidar A1](http://wiki.ros.org/rplidar)
+* [AS5600](https://ams.com/as5600) magnetic encoders
 
 ### Installing alpha_urdf
 
@@ -24,3 +24,27 @@ catkin_make
 You will also need the rplidar package in the your_workspace/src directory
 
 https://github.com/Slamtec/rplidar_ros
+
+
+## Deployment
+
+From the root directory of your workspace.
+
+Source your workspace
+```
+source devel/setup.bash 
+```
+
+Run the launch file. Rviz should start, and display the robot.
+```
+roslaunch alpha_urdf display.launch
+
+```
+
+In Rviz:
+* change the fixed frame to "odom"
+* add a new display "LaserScan". Set the topic to /scan
+
+
+You should now be able to view the robot model in rviz, along with the odometry and lidar data.
+
