@@ -47,8 +47,9 @@ roslaunch alpha_urdf display.launch
 ```
 
 In Rviz:
-* change the global option fixed frame from "map" to "odom"
-* add a new display "LaserScan". Set the topic to /scan
+* add a new display "RobotModel". Your robot should then appear in rviz.
+* add a new display "LaserScan". Set the topic to /scan. So long as you have a Lidar connected, you will be able to view the lidars laser scan in rviz.
+* change the global option fixed frame from "map" to "odom". So long as you have encoders publsihing data to the "odom" topic, you will be able to see the robot moving in rviz.
 
 
 You should now be able to view the robot model in rviz, along with the odometry and lidar data.
