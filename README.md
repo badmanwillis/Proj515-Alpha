@@ -51,5 +51,5 @@ You should now be able to view the robot model in rviz, along with the odometry 
 
 # todo
 * package not whole repo
-* rename paths in files alpha.xml
+* rename paths in files alpha.xml, and display.launch
 
