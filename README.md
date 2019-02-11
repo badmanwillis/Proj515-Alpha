@@ -49,3 +49,7 @@ In Rviz:
 
 You should now be able to view the robot model in rviz, along with the odometry and lidar data.
 
+# todo
+* package not whole repo
+* rename paths in files alpha.xml
+
