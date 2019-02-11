@@ -13,7 +13,11 @@ You will need:
 
 ### Installing alpha_urdf package
 
-Copy the alpha_urdf package into your_workspace/src directory. Then rebuild the workspace.
+Copy the alpha_urdf package into your_workspace/src directory. You only need the package, not the whole repository Then rebuild the workspace.
+
+You will need to change the file paths within:
+* alpha.xml
+* display.launch
 
 ```
 catkin_make
@@ -43,13 +47,9 @@ roslaunch alpha_urdf display.launch
 ```
 
 In Rviz:
-* change the fixed frame to "odom"
+* change the global option fixed frame from "map" to "odom"
 * add a new display "LaserScan". Set the topic to /scan
 
 
 You should now be able to view the robot model in rviz, along with the odometry and lidar data.
-
-# todo
-* package not whole repo
-* rename paths in files alpha.xml, and display.launch
 
